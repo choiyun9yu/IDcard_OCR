@@ -16,9 +16,8 @@ Text Detaction -> Text Recognizer -> Text Extraction -> Text Matching
 
 ### Open Source
 - Pytesseract 
-'''
 pip install pytesseract
-'''
+
 - PaddleOCR
-'''pip install paddelpaddle'''
-'''pip install paddleocr'''
+pip install paddelpaddle
+pip install paddleocr
