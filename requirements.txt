@@ -1,0 +1,8 @@
+numpy
+matplotlib
+cv2
+cmake
+dlib
+pytesseract
+paddelpaddel
+paddleocr
