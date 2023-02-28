@@ -12,7 +12,7 @@ Text Detaction -> Text Recognizer -> Text Extraction -> Text Matching
 - requirements : requirements.txt
 
 ### Data set
-- 비공개
+- data/
 
 ### Open API
 - Pytesseract   
@@ -41,4 +41,17 @@ pip install deepface
 
 
 ## Evaluation
-얼굴인식 기술 성능 평가 지표
+### 얼굴인식 기술 
+- 얼굴 인식은 비교하 두 이미지를 먼저 Backbone Network에 넣고,  
+  최종단에 나오는 Embedding Vector 두 개를 비교하여 동일인 여부를 결정한다.
+- Backbone Network는 보통 CNN구조이며, Resnet, Inception, VGG 등 여러가지 네트워크가 될 수 있다.
+- Embedding Vector는 네으쿼으 최종단에 있는 길이가 N인 벡터이다.
+- 요약하자면 얼굴이미지를 1차원 벡터로 정보를 압축하여 두 백터의 유사도를 비교하는 것이다.
+
+#### 유사도 비교 방법 2가지
+두 가지 방법은 학습을 어떤 Loss로 했느냐에 따라 결정된다.
+- 1. 두 벡터의 L2 거리를 직접 구하는 방법(유클리드 거리)
+triplet-loss로 학습한 경우
+- 2. 두 벡터의 Cosine 거리를 구해서 구하는 방법   
+softmax-loss로 학습한 경우
+- 참조 : https://m.blog.naver.com/laonple/221583231520
