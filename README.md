@@ -1,5 +1,5 @@
 # IDcard_OCR
-Picture Taken 
+Picture Taken  
 Face Detaction -> Landmark Detaction -> Face Aligment -> Featture Extraction -> Feature Matching  
 Text Detaction -> Text Recognizer -> Text Extraction -> Text Matching
 
