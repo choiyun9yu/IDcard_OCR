@@ -4,7 +4,19 @@ Face Detaction -> Landmark Detaction -> Face Aligment -> Featture Extraction -> 
 Text Detaction -> Text Recognizer -> Text Extraction -> Text Matching
 
 ## Update
-**Feb 28, 2022** : 오픈소스 모델들로 OCR, Face Verification 테스트
+**Feb 28, 2022**  
+오픈소스 모델들로 OCR, Face Verification 테스트  
+
+**Mar 2, 2022**   
+ 오픈 소스 모델들의 신분증과 어두운 얼굴사진 사이의 Accuracy 테스트  
+ Face_recognition  acc(0.71)  / recall(0.95)  # 털털한 모델 
+ FaceNET           acc(0.505) / recall(0.8)   
+ FaceNET512        acc(0.57)  / recall(23)
+ VGG-Face          acc(0.665) / recall(61)
+ DeepFace          acc(0.5)   / recall(2)     # 매우 깐깐한 모델
+ ArcFace           acc(0.735) / recall(69)    # 깐깐한 모델
+ InsightFace       acc()      / recall()
+ 
 
 ## Getting Started
 ### Dependency
@@ -38,7 +50,6 @@ pip install deepface
 하나는 1:1 검증으로 두 장의 사진이 동일인 인지 파악하는 얼굴 검증(Face Verification),
 다른 하나는 1:N 검증으로 새로 들어온 한 장의 사진 속 사람이 DB에 존재하는  
 인물인지 검증하는 얼굴 식별(Face Identification) 이다. 
-
 
 ## Evaluation
 ### 얼굴인식 기술 
