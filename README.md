@@ -65,4 +65,4 @@ pip install deepface
 triplet-loss로 학습한 경우
 - 2. 두 벡터의 Cosine 거리를 구해서 구하는 방법   
 softmax-loss로 학습한 경우
-- 참조 : https://m.blog.naver.com/laonple/221583231520
+- 참조 : https://m.blog.naver.com/laonple/221583231520. 
