@@ -1,4 +1,4 @@
-# Face Recognition with ArcFace
+# 신분증 얼굴인식 with ArcFace
 
 ## 개요
 딥러닝에서 얼굴과 관련된 기술은 크게 두 가지로 나눌 수 있다.  
