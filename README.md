@@ -36,4 +36,4 @@ We used ArcFace open-source because it was the most accurate among open-source m
 In this project, we used a method to increase accuracy by optimizing the threshold.
 ![Threshold](https://github.com/choiyun9yu/pr.FaceVerification/blob/main/img/Threshold%20Train.png)
 
-*You can find related information through ![Threshold_Train.ipynb](https://github.com/choiyun9yu/pr.FaceVerification/blob/main/img/Face%20Verifiaction%20Model%20Structure.png).*
+*You can find related information through ![Threshold_Train.ipynb](https://github.com/choiyun9yu/pr.FaceVerification/blob/main/Threshold_Train.ipynb).*
