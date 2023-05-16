@@ -1,5 +1,5 @@
 # Face Verification between IDcard and Face photo
-[![arcface](https://github.com/choiyun9yu/pr.FaceVerification/blob/main/img/arcface.svg)](https://github.com/serengil/deepface)
+[![arcface](https://github.com/choiyun9yu/pr.FaceVerification/blob/main/img/deepface.svg)](https://github.com/serengil/deepface)
 
 ## Overview
 In deep learning, facial-related technologies are largely divied into two categories.
