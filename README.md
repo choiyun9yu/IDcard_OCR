@@ -1,5 +1,5 @@
 # Face Verification between IDcard and Face photo
-
+[![arcface](https://github.com/serengil/deepface)
 
 ## Overview
 In deep learning, facial-related technologies are largely divied into two categories.
@@ -36,6 +36,4 @@ We used ArcFace open-source because it was the most accurate among open-source m
 In this project, we used a method to increase accuracy by optimizing the threshold.
 ![Threshold](https://github.com/choiyun9yu/pr.FaceVerification/blob/main/img/Threshold%20Train.png)
 
-*You can find related information through 'Threshold_Train.ipynb'.*
-
-[ArcFace][https://github.com/serengil/deepface]
+*You can find related information through ![Threshold_Train.ipynb](https://github.com/choiyun9yu/pr.FaceVerification/blob/main/img/Face%20Verifiaction%20Model%20Structure.png).*
