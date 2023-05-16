@@ -24,6 +24,9 @@ The difference in distance between these vectors determines whether the two face
 
 
 ## Contents
+People in convenience stores or bars sometimes cheat to pass the identification test. So I wanted to create a model that determines if the ID-card holder and the owner were the same. 
+![Threshold_Train.ipynb](https://github.com/choiyun9yu/pr.FaceVerification/blob/main/img/img.png)
+
 We used ArcFace open-source because it was the most accurate among open-source models  in our dataset.
 
 |Model|Acc|
@@ -33,7 +36,8 @@ We used ArcFace open-source because it was the most accurate among open-source m
 |DeepFace|0.60|
 |FaceNet|0.79|
 
-In this project, we used a method to increase accuracy by optimizing the threshold.
+In this project, threshold optimization was performed to improve accuracy over the existing model.
+
 ![Threshold](https://github.com/choiyun9yu/pr.FaceVerification/blob/main/img/Threshold%20Train.png)
 
 *You can find related information through [Threshold_Train.ipynb](https://github.com/choiyun9yu/pr.FaceVerification/blob/main/Threshold_Train.ipynb).*
