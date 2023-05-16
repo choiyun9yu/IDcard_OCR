@@ -1,32 +1,42 @@
-# 신분증 얼굴인식 with ArcFace
-
-## 개요
-딥러닝에서 얼굴과 관련된 기술은 크게 두 가지로 나눌 수 있다.  
-사진이나 동영상에서 얼굴의 위치를 찾는 얼굴 검출(Face Detaction)과  
-얼굴의 동일인 여부를 판단하는 얼굴 인식(Face Recognition)이 그것이다.  
-
-여기서 얼굴 인식은 다시 2가지로 나뉘게 된다. 하나는 1:1 검증으로  
-두 장의 얼굴 사진으로 서로 동일인인지를 판단하는 얼굴 검증(Face Verification)이고,    
-다른 하나는 1:N 검증으로 새로 들어온 얼굴 사진이 기존에 존재하는 DB에 있는 사람인지를  
-판단하는 얼굴 식별(Face Identification)이다.
-
-본 프로젝트는 얼굴 검증 프로젝트로서 신분증 사진과 얼굴 사진을 비교하여 동일이 여부를   
-판단하는 딥러닝 모델을 만들고자 했다.  
+# Face Verification between IDcard and Face photo
 
 
-## 얼굴 검증 모델의 구조 
-얼굴 검증 모델은 두 장의 사진을 Input하면 그곳에서 각각 먼저 얼굴을 검출한다.  
-얼굴을 검출한 뒤 특징을 뽑기 위해 사전 훈련된 backbone network에 넣어서  
-특징을 추출하게 된다. 이때 특징을 더 잘 추출하기 위해서 얼굴을 정렬하는 등의  
-전처리를 할 수 있다.
+## Overview
+In deep learning, facial-related technologies are largely divied into two categories.
+Face Detection, which finds the location of the face in a picture or video,
+and Face Recognition that determines wheter the face is the same.
+  
+Additionally, Face Recognition is again divided into two categories. The first one is Face Verification, which determines whether two facial photos belong to the same person through a 1:1 verification process.
+The second category is Face Identification, which involves determining whether a newly captured facial photo matches any person in an existing database through a 1:N verification process.
 
-전처리와 backbone을 지나면 각 얼굴 사진들의 Embedding Vector가 추출된다.  
-이 벡터간의 거리차이로 두 얼굴의 동일인 여부를 결정한다. 거리차이가 임계값(Threshold)를  
-넘어가면 비동일인, 임계값을 넘지 않으면 동일인으로 판단하는 것이다.  
+This project aims to develop a deep learning model for Face Verification, where it compares an identification photo with a facial image to determine if they belong to the same person.
 
 
-## 내용
-본 프로젝트에서는 사전 학습된 얼굴 인식 모델들 중에서 가장 정확도가 높은 모델을 선정한 후  
-임계값을 최적화하여 정확도를 높이는 방법을 사용하였다.  
+## Face Verification Model Structure
+
+
+
+First, the Face Verification model detects faces when two photos are provided as input.
+After detecting the face, the feature is extracted by putting it in a pre-trained backbone network to extract the feature. To extract features more effectively, various preprocessing techniques such as aligning the faces can be applied at this stage.
+
+After the preprocessing and backbone, the Embedding Vector of each face photo is extracted.
+The difference in distance between these vectors determines whether the two faces are the same. If the distance difference exceeds the threshold, it is judged to be non-identical, and if it does not exceed the threshold, it is judged to be the same person.
+
+
+## Contents
+We used ArcFace open-source because it was the most accurate among open-source models  in our dataset.
+
+|Model|Acc|
+|-----|---|
+|ArcFace|**0.86**|
+|VGGFace|0.84|
+|DeepFace|0.60|
+|FaceNet|0.79|
+
+In this project, we used a method to increase accuracy by optimizing the threshold.
+
+
+
+*You can find related information through 'Threshold_Train.ipynb'.*
 
 오픈소스 : https://github.com/serengil/deepface
