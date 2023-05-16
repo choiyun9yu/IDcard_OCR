@@ -14,7 +14,7 @@ This project aims to develop a deep learning model for Face Verification, where 
 
 ## Face Verification Model Structure
 
-
+![Structure](https://github.com/choiyun9yu/pr.FaceVerification/blob/main/img/Face%20Verifiaction%20Model%20Structure.png)
 
 First, the Face Verification model detects faces when two photos are provided as input.
 After detecting the face, the feature is extracted by putting it in a pre-trained backbone network to extract the feature. To extract features more effectively, various preprocessing techniques such as aligning the faces can be applied at this stage.
@@ -34,9 +34,8 @@ We used ArcFace open-source because it was the most accurate among open-source m
 |FaceNet|0.79|
 
 In this project, we used a method to increase accuracy by optimizing the threshold.
-
-
+![Threshold](https://github.com/choiyun9yu/pr.FaceVerification/blob/main/img/Threshold%20Train.png)
 
 *You can find related information through 'Threshold_Train.ipynb'.*
 
-오픈소스 : https://github.com/serengil/deepface
+[ArcFace][https://github.com/serengil/deepface]
